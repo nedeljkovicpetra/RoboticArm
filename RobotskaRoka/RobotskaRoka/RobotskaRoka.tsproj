@@ -13,15 +13,23 @@
 		</System>
 		<Plc>
 			<Project GUID="{7A4D987D-8BA4-4978-AD75-CADD3E0496A6}" Name="RobotskaRokaPLC" PrjFilePath="RobotskaRokaPLC\RobotskaRokaPLC.plcproj" TmcFilePath="RobotskaRokaPLC\RobotskaRokaPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{23CE5531-89EA-1645-3494-7FBB55C9DF4B}">
 					<Name>RobotskaRokaPLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
 						<Context>
-							<Id>1</Id>
-							<Name>Default</Name>
+							<Id>0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010040</OTCID>
+							</ManualConfig>
+							<Priority>21</Priority>
+							<CycleTime>10000000</CycleTime>
 						</Context>
 					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="21" OTCID="#x08502001"/>
+					</TaskPouOids>
 				</Instance>
 			</Project>
 		</Plc>
