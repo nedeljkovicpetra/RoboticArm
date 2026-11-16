@@ -1,0 +1,29 @@
+﻿# TwinCAT generated files
+**/_Boot/
+**/_CompileInfo/
+**/_Config/
+**/_Deployment/
+**/_Libraries/
+**/Boot/
+**/CompileInfo/
+**/Generated/
+**/Objects/
+**/PlcGenerated/
+**/TwinCAT RT (x64)/
+
+# Visual Studio / TwinCAT cache
+.vs/
+**/*.tcr
+**/*.tmc
+**/*.tpy
+**/*.compileinfo
+**/*.plcproj.bak
+*.suo
+*.user
+*.cache
+*.tmp
+*.bak
+*.log
+
+# TwinCAT temporary files
+*.~u
