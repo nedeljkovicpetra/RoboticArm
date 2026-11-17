@@ -28,6 +28,17 @@ VAR
 	bGripRun AT %Q* : BOOL;
 	bGripDirection AT %Q* : BOOL;
 	bGripLimit AT %I* : BOOL;
+	
+	
+	fbRotateSelector : FB_CommandSelector;
+    fbExtendSelector : FB_CommandSelector;
+    fbLiftSelector : FB_CommandSelector;
+    fbGripSelector : FB_CommandSelector;
+	
+	fbRotateMotor : FB_MotorControl;
+	fbExtendMotor : FB_MotorControl;
+	fbLiftMotor : FB_MotorControl;
+	fbGripMotor : FB_MotorControl;
 END_VAR
 ]]></Declaration>
     <Implementation>
