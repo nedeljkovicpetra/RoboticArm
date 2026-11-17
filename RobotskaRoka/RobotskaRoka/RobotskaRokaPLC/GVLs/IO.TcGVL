@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="IO" Id="{3f44f2c7-eb70-4acc-ab03-1946dc7b45ac}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	ToggleSwitch : BOOL;
+    ButtonRed : BOOL;
+    ButtonGreen : BOOL;
+
+    ButtonBlackLeftUp : BOOL;
+    ButtonBlackRightUp : BOOL;
+    ButtonBlackLeftDown : BOOL;
+    ButtonBlackRightDown : BOOL;
+
+    SwitchReferenceRotate : BOOL;
+    SwitchStepRotate : BOOL;
+
+    SwitchReferenceExtend : BOOL;
+    SwitchStepExtend : BOOL;
+
+    SwitchReferenceLift : BOOL;
+    SwitchStepLift : BOOL;
+
+    SwitchReferenceGrip : BOOL;
+    SwitchStepGrip : BOOL;
+	
+	LEDRed : BOOL;
+    LEDGreen : BOOL;
+    LEDBlueUp : BOOL;
+    LEDBlueDown : BOOL;
+
+    MotorRotateDirection : BOOL;
+    MotorRotateMovement : BOOL;
+
+    MotorExtendDirection : BOOL;
+    MotorExtendMovement : BOOL;
+
+    MotorLiftDirection : BOOL;
+    MotorLiftMovement : BOOL;
+
+    MotorGripDirection : BOOL;
+    MotorGripMovement : BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -3,30 +3,31 @@
   <POU Name="MAIN" Id="{26f6676c-871c-4b33-aa99-0c46ab4a81a1}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	bManualMode : BOOL;
-    bRotateLeft : BOOL;
-    bRotateRight : BOOL;
-    bRotateRun : BOOL;
-    bRotateDirection : BOOL;
-    bRotateLimit : BOOL;
+	bManualMode AT %I* : BOOL;
 	
-	bExtend : BOOL;
-	bRetract : BOOL;
-	bExtendRun : BOOL;
-	bExtendDirection : BOOL;
-	bExtendLimit : BOOL;
+    bRotateLeft AT %I* : BOOL;
+    bRotateRight AT %I* : BOOL;
+    bRotateRun AT %I* : BOOL;
+    bRotateDirection AT %Q*: BOOL;
+    bRotateLimit AT %Q* : BOOL;
 	
-	bLiftUp : BOOL;
-	bLiftDown : BOOL;
-	bLiftRun : BOOL;
-	bLiftDirection : BOOL;
-	bLiftLimit : BOOL;
+	bExtend AT %I* : BOOL;
+	bRetract AT %I* : BOOL;
+	bExtendRun AT %Q* : BOOL;
+	bExtendDirection AT %Q* : BOOL;
+	bExtendLimit AT %I* : BOOL;
 	
-	bGripOpen : BOOL;
-	bGripClose : BOOL;
-	bGripRun : BOOL;
-	bGripDirection : BOOL;
-	bGripLimit : BOOL;
+	bLiftUp AT %I* : BOOL;
+	bLiftDown AT %I* : BOOL;
+	bLiftRun AT %Q* : BOOL;
+	bLiftDirection AT %Q* : BOOL;
+	bLiftLimit AT %I* : BOOL;
+	
+	bGripOpen AT %I* : BOOL;
+	bGripClose AT %I*  : BOOL;
+	bGripRun AT %Q* : BOOL;
+	bGripDirection AT %Q* : BOOL;
+	bGripLimit AT %I* : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
