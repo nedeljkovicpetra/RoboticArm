@@ -16,6 +16,7 @@ VAR_OUTPUT
 END_VAR
 
 VAR
+	
 END_VAR
 ]]></Declaration>
     <Implementation>

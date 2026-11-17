@@ -18,8 +18,7 @@ END_VAR
 VAR
 	bAllowedForward : BOOL;
     bAllowedBackward : BOOL;
-END_VAR
-]]></Declaration>
+END_VAR]]></Declaration>
     <Implementation>
       <NWL>
         <XmlArchive>
