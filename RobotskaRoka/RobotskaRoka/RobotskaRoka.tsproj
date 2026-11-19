@@ -25,7 +25,7 @@
 		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{56F65962-5C66-496B-A47E-17CFBFE14CD0}" TargetNetId="5.132.85.193.1.1" Target64Bit="true" ShowHideConfigurations="#x6">
+	<Project ProjectGUID="{56F65962-5C66-496B-A47E-17CFBFE14CD0}" TargetNetId="199.4.42.250.1.1" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
@@ -38,7 +38,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{7A4D987D-8BA4-4978-AD75-CADD3E0496A6}" Name="RobotskaRokaPLC" PrjFilePath="RobotskaRokaPLC\RobotskaRokaPLC.plcproj" TmcFilePath="RobotskaRokaPLC\RobotskaRokaPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2349CD8A-C990-ECA2-A1D0-6F0BBE725B1A}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{AA91E9F0-EE35-C1CB-80B3-100B667FB554}" TmcPath="RobotskaRokaPLC\RobotskaRokaPLC.tmc">
 					<Name>RobotskaRokaPLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -141,7 +141,7 @@
 			</Project>
 		</Plc>
 		<Io>
-			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.132.85.193.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
+			<Device Id="1" Disabled="true" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="199.4.42.250.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
 				<Name>Device 1 (EtherCAT)</Name>
 				<AddressInfo>
 					<Ccat>
@@ -348,7 +348,7 @@
 				</Box>
 				<EtherCAT/>
 			</Device>
-			<Device Id="2" DevType="10">
+			<Device Id="2" Disabled="true" DevType="10">
 				<Name>Device 2 (NOV-DP-RAM)</Name>
 				<AddressInfo>
 					<Io_Ccat>
@@ -371,7 +371,7 @@
 				</Image>
 				<DpRam/>
 			</Device>
-			<Device Id="3" DevType="161" AmsNetId="5.132.85.193.4.1">
+			<Device Id="3" Disabled="true" DevType="161" AmsNetId="199.4.42.250.4.1">
 				<Name>Device 3 (CX7000)</Name>
 				<DevData>3412000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
 				<Image Id="4" AddrType="1" ImageType="3" SizeIn="6" SizeOut="20">
@@ -577,7 +577,6 @@
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500840000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^RobotskaRokaPLC^RobotskaRokaPLC Instance">
 			<OwnerB Name="TIID^Device 3 (CX7000)^Term 1 (CX7028)">
 				<Link VarA="PlcTask Inputs^MAIN.bExtend" VarB="Module 5 (DI_2x)^DI_2x Input Channel 1^Input"/>
@@ -585,6 +584,8 @@
 				<Link VarA="PlcTask Inputs^MAIN.bRetract" VarB="Module 5 (DI_2x)^DI_2x Input Channel 2^Input"/>
 				<Link VarA="PlcTask Inputs^MAIN.bRotateLeft" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 2^Input"/>
 				<Link VarA="PlcTask Inputs^MAIN.bRotateRight" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.bShift" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.bStopButton" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 1^Input"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
