@@ -38,7 +38,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{7A4D987D-8BA4-4978-AD75-CADD3E0496A6}" Name="RobotskaRokaPLC" PrjFilePath="RobotskaRokaPLC\RobotskaRokaPLC.plcproj" TmcFilePath="RobotskaRokaPLC\RobotskaRokaPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{3D379F43-CB2A-29EA-4016-FA8AD8AC9AA3}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2349CD8A-C990-ECA2-A1D0-6F0BBE725B1A}">
 					<Name>RobotskaRokaPLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

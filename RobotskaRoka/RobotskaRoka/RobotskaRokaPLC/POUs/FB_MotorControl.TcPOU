@@ -118,16 +118,16 @@ END_VAR]]></Declaration>
                               <v n="SymbolComment">""</v>
                               <v n="Address">""</v>
                               <o n="Flags" t="Flags">
-                                <v n="Flags">1</v>
+                                <v n="Flags">0</v>
                                 <v n="Fixed">true</v>
                                 <v n="Extensible">false</v>
                               </o>
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">15L</v>
+                              <v n="Id">56L</v>
                             </o>
-                            <v n="Id">14L</v>
+                            <v n="Id">55L</v>
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
@@ -137,16 +137,16 @@ END_VAR]]></Declaration>
                               <v n="SymbolComment">""</v>
                               <v n="Address">""</v>
                               <o n="Flags" t="Flags">
-                                <v n="Flags">0</v>
+                                <v n="Flags">1</v>
                                 <v n="Fixed">true</v>
                                 <v n="Extensible">false</v>
                               </o>
                               <v n="LValue">false</v>
-                              <v n="Boolean">true</v>
+                              <v n="Boolean">false</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">19L</v>
+                              <v n="Id">54L</v>
                             </o>
-                            <v n="Id">18L</v>
+                            <v n="Id">53L</v>
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
@@ -281,25 +281,6 @@ END_VAR]]></Declaration>
                               <v n="SymbolComment">""</v>
                               <v n="Address">""</v>
                               <o n="Flags" t="Flags">
-                                <v n="Flags">1</v>
-                                <v n="Fixed">true</v>
-                                <v n="Extensible">false</v>
-                              </o>
-                              <v n="LValue">false</v>
-                              <v n="Boolean">true</v>
-                              <v n="IsInstance">false</v>
-                              <v n="Id">32L</v>
-                            </o>
-                            <v n="Id">31L</v>
-                          </o>
-                          <o>
-                            <o n="Operand" t="Operand">
-                              <v n="Operand">"bForward"</v>
-                              <v n="Type">"BOOL"</v>
-                              <v n="Comment">""</v>
-                              <v n="SymbolComment">""</v>
-                              <v n="Address">""</v>
-                              <o n="Flags" t="Flags">
                                 <v n="Flags">0</v>
                                 <v n="Fixed">true</v>
                                 <v n="Extensible">false</v>
@@ -310,6 +291,25 @@ END_VAR]]></Declaration>
                               <v n="Id">34L</v>
                             </o>
                             <v n="Id">33L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bForward"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">58L</v>
+                            </o>
+                            <v n="Id">57L</v>
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
