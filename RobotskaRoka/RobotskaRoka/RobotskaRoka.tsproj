@@ -38,91 +38,22 @@
 		</System>
 		<Plc>
 			<Project GUID="{7A4D987D-8BA4-4978-AD75-CADD3E0496A6}" Name="RobotskaRokaPLC" PrjFilePath="RobotskaRokaPLC\RobotskaRokaPLC.plcproj" TmcFilePath="RobotskaRokaPLC\RobotskaRokaPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{AA91E9F0-EE35-C1CB-80B3-100B667FB554}" TmcPath="RobotskaRokaPLC\RobotskaRokaPLC.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{DDC662DF-32F7-B620-AAFD-942848BCE201}" TmcPath="RobotskaRokaPLC\RobotskaRokaPLC.tmc">
 					<Name>RobotskaRokaPLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bRotateRun</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bRotateDirection</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bExtendRun</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bExtendDirection</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bLiftRun</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bLiftDirection</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bGripRun</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bGripDirection</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="1">
-						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>MAIN.bManualMode</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bRotateLeft</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bRotateRight</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bExtend</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bRetract</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bShift</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bStopButton</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bRotateLimit</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bExtendLimit</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bLiftLimit</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bGripLimit</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
+					<UnrestoredVarLinks ImportTime="2026-11-19T22:33:48">
+						<OwnerA Name="InputDst" Prefix="TIPC^RobotskaRokaPLC^RobotskaRokaPLC Instance" Type="1">
+							<OwnerB Name="TIID^Device 3 (CX7000)^Term 1 (CX7028)">
+								<Link VarA="MAIN.bExtend" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 5 (DI_2x)^DI_2x Input Channel 1^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bManualMode" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 7 (DI_2x)^DI_2x Inputs Channel 1^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bRetract" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 5 (DI_2x)^DI_2x Input Channel 2^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bRotateLeft" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 2^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bRotateRight" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 1^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bShift" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 2^Input" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.bStopButton" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 1^Input" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
 					<Contexts>
 						<Context>
 							<Id>0</Id>
@@ -576,17 +507,4 @@
 			</Device>
 		</Io>
 	</Project>
-	<Mappings>
-		<OwnerA Name="TIPC^RobotskaRokaPLC^RobotskaRokaPLC Instance">
-			<OwnerB Name="TIID^Device 3 (CX7000)^Term 1 (CX7028)">
-				<Link VarA="PlcTask Inputs^MAIN.bExtend" VarB="Module 5 (DI_2x)^DI_2x Input Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bManualMode" VarB="Module 7 (DI_2x)^DI_2x Inputs Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bRetract" VarB="Module 5 (DI_2x)^DI_2x Input Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bRotateLeft" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bRotateRight" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bShift" VarB="Module 3 (DIO_2x)^DIO_2x Input Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^MAIN.bStopButton" VarB="Module 1 (DIO_2x)^DIO_2x Inputs Channel 1^Input"/>
-			</OwnerB>
-		</OwnerA>
-	</Mappings>
 </TcSmProject>

@@ -1,68 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
   <POU Name="MAIN" Id="{26f6676c-871c-4b33-aa99-0c46ab4a81a1}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM MAIN
+    <Declaration><![CDATA[
+PROGRAM MAIN
 VAR
-    bManualMode AT %I* : BOOL;
-    bRotateLeft AT %I* : BOOL;
-    bRotateRight AT %I* : BOOL;
-    bExtend AT %I* : BOOL;
-    bRetract AT %I* : BOOL;
-    bShift AT %I* : BOOL;
-    bStopButton AT %I* : BOOL;
+    // ==================================
+    // MANUAL CONTROL
+    // ==================================
 
-    bRotateLimit AT %I* : BOOL;
-    bExtendLimit AT %I* : BOOL;
-    bLiftLimit AT %I* : BOOL;
-    bGripLimit AT %I* : BOOL;
-	
-	bAllButtonsReleased : BOOL;
-	bShiftSelected : BOOL;
-	bShiftMismatch : BOOL;
-	bCommandArmed : BOOL;
-	bMotionEnabled : BOOL;
+    bAllButtonsReleased : BOOL;
+    bShiftSelected : BOOL;
+    bShiftMismatch : BOOL;
+    bCommandArmed : BOOL;
+    bMotionEnabled : BOOL;
+
+    // ==================================
+    // MOTOR COMMANDS
+    // ==================================
 
     bRotateLeftCmd : BOOL;
     bRotateRightCmd : BOOL;
+
     bExtendCmd : BOOL;
     bRetractCmd : BOOL;
+
     bLiftUp : BOOL;
     bLiftDown : BOOL;
+
     bGripOpen : BOOL;
     bGripClose : BOOL;
 
+    // ==================================
+    // COMMAND SELECTOR OUTPUTS
+    // ==================================
+
     bReqRotateForward : BOOL;
     bReqRotateBackward : BOOL;
+
     bReqExtendForward : BOOL;
     bReqExtendBackward : BOOL;
+
     bReqLiftForward : BOOL;
     bReqLiftBackward : BOOL;
+
     bReqGripForward : BOOL;
     bReqGripBackward : BOOL;
 
-    bRotateRun AT %Q* : BOOL;
-    bRotateDirection AT %Q* : BOOL;
-
-    bExtendRun AT %Q* : BOOL;
-    bExtendDirection AT %Q* : BOOL;
-
-    bLiftRun AT %Q* : BOOL;
-    bLiftDirection AT %Q* : BOOL;
-
-    bGripRun AT %Q* : BOOL;
-    bGripDirection AT %Q* : BOOL;
-
+    // ==================================
+    // COMMAND SELECTORS
+    // ==================================
 
     fbRotateSelector : FB_CommandSelector;
     fbExtendSelector : FB_CommandSelector;
     fbLiftSelector : FB_CommandSelector;
     fbGripSelector : FB_CommandSelector;
 
+    // ==================================
+    // MOTOR CONTROLLERS
+    // ==================================
 
     fbRotateMotor : FB_MotorControl;
     fbExtendMotor : FB_MotorControl;
     fbLiftMotor : FB_MotorControl;
     fbGripMotor : FB_MotorControl;
+
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -139,7 +140,7 @@ END_VAR
                         <l2 n="InputItems" cet="BoxTreeOperand">
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -158,7 +159,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Operand">"IO.ButtonBlackRightUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -177,7 +178,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bExtend"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -196,7 +197,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRetract"</v>
+                              <v n="Operand">"IO.ButtonBlackRightDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -321,7 +322,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bShift"</v>
+                              <v n="Operand">"IO.ButtonGreen"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -446,7 +447,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bShift"</v>
+                              <v n="Operand">"IO.ButtonGreen"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -580,7 +581,7 @@ END_VAR
                             <l2 n="InputItems" cet="BoxTreeOperand">
                               <o>
                                 <o n="Operand" t="Operand">
-                                  <v n="Operand">"bShift"</v>
+                                  <v n="Operand">"IO.ButtonGreen"</v>
                                   <v n="Type">"BOOL"</v>
                                   <v n="Comment">""</v>
                                   <v n="SymbolComment">""</v>
@@ -663,7 +664,7 @@ END_VAR
                             <l2 n="InputItems" cet="BoxTreeOperand">
                               <o>
                                 <o n="Operand" t="Operand">
-                                  <v n="Operand">"bShift"</v>
+                                  <v n="Operand">"IO.ButtonGreen"</v>
                                   <v n="Type">"BOOL"</v>
                                   <v n="Comment">""</v>
                                   <v n="SymbolComment">""</v>
@@ -824,7 +825,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bManualMode"</v>
+                              <v n="Operand">"IO.ToggleSwitch"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -843,7 +844,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bStopButton"</v>
+                              <v n="Operand">"IO.ButtonRed"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -968,7 +969,7 @@ END_VAR
                         <l2 n="InputItems" cet="BoxTreeOperand">
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bManualMode"</v>
+                              <v n="Operand">"IO.ToggleSwitch"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -987,7 +988,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bStopButton"</v>
+                              <v n="Operand">"IO.ButtonRed"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1112,7 +1113,7 @@ END_VAR
                         <l2 n="InputItems" cet="BoxTreeOperand">
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bManualMode"</v>
+                              <v n="Operand">"IO.ToggleSwitch"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1131,7 +1132,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bStopButton"</v>
+                              <v n="Operand">"IO.ButtonRed"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1313,7 +1314,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1457,7 +1458,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Operand">"IO.ButtonBlackRightUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1601,7 +1602,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bExtend"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1745,7 +1746,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRetract"</v>
+                              <v n="Operand">"IO.ButtonBlackRightDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1889,7 +1890,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -2033,7 +2034,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Operand">"IO.ButtonBlackRightUp"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -2177,7 +2178,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bExtend"</v>
+                              <v n="Operand">"IO.ButtonBlackLeftDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -2321,7 +2322,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRetract"</v>
+                              <v n="Operand">"IO.ButtonBlackRightDown"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -2454,7 +2455,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bManualMode"</v>
+                            <v n="Operand">"IO.ToggleSwitch"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -2683,7 +2684,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bManualMode"</v>
+                            <v n="Operand">"IO.ToggleSwitch"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -2912,7 +2913,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bManualMode"</v>
+                            <v n="Operand">"IO.ToggleSwitch"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3141,7 +3142,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bManualMode"</v>
+                            <v n="Operand">"IO.ToggleSwitch"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3309,7 +3310,7 @@ END_VAR
                         <l2 n="OutputItems" cet="Operand">
                           <n />
                           <o>
-                            <v n="Operand">"bRotateRun"</v>
+                            <v n="Operand">"IO.MotorRotateMovement"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3325,7 +3326,7 @@ END_VAR
                             <v n="Id">535L</v>
                           </o>
                           <o>
-                            <v n="Operand">"bRotateDirection"</v>
+                            <v n="Operand">"IO.MotorRotateDirection"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3427,7 +3428,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bRotateLimit"</v>
+                            <v n="Operand">"IO.SwitchReferenceRotate"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3538,7 +3539,7 @@ END_VAR
                         <l2 n="OutputItems" cet="Operand">
                           <n />
                           <o>
-                            <v n="Operand">"bExtendRun"</v>
+                            <v n="Operand">"IO.MotorExtendMovement"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3554,7 +3555,7 @@ END_VAR
                             <v n="Id">552L</v>
                           </o>
                           <o>
-                            <v n="Operand">"bExtendDirection"</v>
+                            <v n="Operand">"IO.MotorExtendDirection"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3656,7 +3657,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bExtendLimit"</v>
+                            <v n="Operand">"IO.SwitchReferenceExtend"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3767,7 +3768,7 @@ END_VAR
                         <l2 n="OutputItems" cet="Operand">
                           <n />
                           <o>
-                            <v n="Operand">"bLiftRun"</v>
+                            <v n="Operand">"IO.MotorLiftMovement"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3783,7 +3784,7 @@ END_VAR
                             <v n="Id">569L</v>
                           </o>
                           <o>
-                            <v n="Operand">"bLiftDirection"</v>
+                            <v n="Operand">"IO.MotorLiftDirection"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3885,7 +3886,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bLiftLimit"</v>
+                            <v n="Operand">"IO.SwitchReferenceLift"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -3996,7 +3997,7 @@ END_VAR
                         <l2 n="OutputItems" cet="Operand">
                           <n />
                           <o>
-                            <v n="Operand">"bGripRun"</v>
+                            <v n="Operand">"IO.MotorGripMovement"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -4012,7 +4013,7 @@ END_VAR
                             <v n="Id">586L</v>
                           </o>
                           <o>
-                            <v n="Operand">"bGripDirection"</v>
+                            <v n="Operand">"IO.MotorGripDirection"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
@@ -4114,7 +4115,7 @@ END_VAR
                         </o>
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"bGripLimit"</v>
+                            <v n="Operand">"IO.SwitchReferenceGrip"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
