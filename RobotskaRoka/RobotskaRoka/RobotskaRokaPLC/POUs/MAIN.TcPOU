@@ -58,7 +58,6 @@ VAR
     fbLiftSelector : FB_CommandSelector;
     fbGripSelector : FB_CommandSelector;
 
-
     fbRotateMotor : FB_MotorControl;
     fbExtendMotor : FB_MotorControl;
     fbLiftMotor : FB_MotorControl;
@@ -1330,6 +1329,44 @@ END_VAR
                             </o>
                             <v n="Id">295L</v>
                           </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">693L</v>
+                            </o>
+                            <v n="Id">692L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bExtend"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">699L</v>
+                            </o>
+                            <v n="Id">698L</v>
+                          </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
                           <l2 n="Names" />
@@ -1457,7 +1494,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Operand">"bRotateLeft"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -1470,9 +1507,47 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
+                              <v n="Id">741L</v>
+                            </o>
+                            <v n="Id">740L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
                               <v n="Id">373L</v>
                             </o>
                             <v n="Id">372L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRetract"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">701L</v>
+                            </o>
+                            <v n="Id">700L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -1601,6 +1676,44 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">739L</v>
+                            </o>
+                            <v n="Id">738L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">707L</v>
+                            </o>
+                            <v n="Id">706L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
                               <v n="Operand">"bExtend"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
@@ -1614,9 +1727,9 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">362L</v>
+                              <v n="Id">705L</v>
                             </o>
-                            <v n="Id">361L</v>
+                            <v n="Id">704L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -1745,6 +1858,44 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">737L</v>
+                            </o>
+                            <v n="Id">736L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">711L</v>
+                            </o>
+                            <v n="Id">710L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
                               <v n="Operand">"bRetract"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
@@ -1758,9 +1909,9 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">351L</v>
+                              <v n="Id">709L</v>
                             </o>
-                            <v n="Id">350L</v>
+                            <v n="Id">708L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -1902,9 +2053,47 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">340L</v>
+                              <v n="Id">735L</v>
                             </o>
-                            <v n="Id">339L</v>
+                            <v n="Id">734L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">715L</v>
+                            </o>
+                            <v n="Id">714L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bExtend"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">713L</v>
+                            </o>
+                            <v n="Id">712L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -2033,7 +2222,7 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
-                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Operand">"bRotateLeft"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
@@ -2046,9 +2235,47 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">441L</v>
+                              <v n="Id">733L</v>
                             </o>
-                            <v n="Id">440L</v>
+                            <v n="Id">732L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">719L</v>
+                            </o>
+                            <v n="Id">718L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRetract"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">717L</v>
+                            </o>
+                            <v n="Id">716L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -2177,6 +2404,44 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">731L</v>
+                            </o>
+                            <v n="Id">730L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">723L</v>
+                            </o>
+                            <v n="Id">722L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
                               <v n="Operand">"bExtend"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
@@ -2190,9 +2455,9 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">430L</v>
+                              <v n="Id">721L</v>
                             </o>
-                            <v n="Id">429L</v>
+                            <v n="Id">720L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -2321,6 +2586,44 @@ END_VAR
                           </o>
                           <o>
                             <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateRight"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">729L</v>
+                            </o>
+                            <v n="Id">728L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"bRotateLeft"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">""</v>
+                              <v n="Address">""</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                                <v n="Extensible">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">true</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">727L</v>
+                            </o>
+                            <v n="Id">726L</v>
+                          </o>
+                          <o>
+                            <o n="Operand" t="Operand">
                               <v n="Operand">"bRetract"</v>
                               <v n="Type">"BOOL"</v>
                               <v n="Comment">""</v>
@@ -2334,9 +2637,9 @@ END_VAR
                               <v n="LValue">false</v>
                               <v n="Boolean">true</v>
                               <v n="IsInstance">false</v>
-                              <v n="Id">419L</v>
+                              <v n="Id">725L</v>
                             </o>
-                            <v n="Id">418L</v>
+                            <v n="Id">724L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
